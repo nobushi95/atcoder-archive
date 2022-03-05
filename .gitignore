@@ -1,7 +1,4 @@
 .vscode
 *.dSYM
-A
-B
-C
-D
-E
+[A-E]
+
