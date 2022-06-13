@@ -7,6 +7,7 @@ using ll = long long;
 #define REPEQ(i, left, right) for (ll i = left; i <= right; i++)
 #define FORE(elem, container) for (auto & elem : container)
 #define ALL(x) (x).begin(), (x).end()
+#define RALL(x) (x).rbegin(), (x).rend()
 template<class T> bool chmin(T &a, const T &b) { if (a > b) { a = b; return true; } return false; }
 template<class T> bool chmax(T &a, const T &b) { if (a < b) { a = b; return true; } return false; }
 template<class T> T gcd(const T &a, const T &b) { if (b == 0) return a; else return gcd(b, a % b); }
