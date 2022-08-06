@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++-11 - アクティブ ファイルのビルドとデバッグ",
+            "name": "g++-12 - アクティブ ファイルのビルドとデバッグ",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -15,7 +15,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "C/C++: g++-11 アクティブなファイルのビルド"
+            "preLaunchTask": "C/C++: g++-12 アクティブなファイルのビルド"
         }
     ]
 }

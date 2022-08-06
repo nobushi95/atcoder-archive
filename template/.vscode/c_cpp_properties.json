@@ -7,7 +7,7 @@
             ],
             "defines": [],
             "macFrameworkPath": [],
-            "compilerPath": "/opt/homebrew/bin/g++-11",
+            "compilerPath": "/opt/homebrew/bin/g++-12",
             "cStandard": "gnu17",
             "intelliSenseMode": "macos-gcc-arm64",
             "compilerArgs": [
