@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include <atcoder/all>
 using namespace std;
+using namespace atcoder;
 using ll = long long;
 const ll infl = 1LL << 60;
 const int inf = INT_MAX / 2;
