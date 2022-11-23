@@ -5,17 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++-12 - アクティブ ファイルのビルドとデバッグ",
+            "name": "g++-12 Mac",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "stopAtEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: g++-12 アクティブなファイルのビルド"
+            "preLaunchTask": "g++-12 Mac Build"
+        },
+        {
+            "name": "g++ Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "g++ Windows Build"
         }
     ]
 }

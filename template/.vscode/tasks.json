@@ -2,8 +2,32 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++-12 アクティブなファイルのビルド",
+            "label": "g++-12 Mac Build",
             "command": "/opt/homebrew/bin/g++-12",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-Wall"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "g++ Windows Build",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
