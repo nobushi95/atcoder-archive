@@ -5,15 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++-12 Mac",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "cwd": "${fileDirname}",
-            "preLaunchTask": "g++-12 Mac Build"
-        },
-        {
             "name": "g++ Windows",
             "type": "cppdbg",
             "request": "launch",
@@ -21,6 +12,15 @@
             "args": [],
             "cwd": "${fileDirname}",
             "preLaunchTask": "g++ Windows Build"
+        },
+        {
+            "name": "g++-12 Mac",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "g++-12 Mac Build"
         }
     ]
 }
