@@ -1,3 +1,8 @@
+use proconio::{input, marker::*};
+
 fn main() {
-    todo!();
+    input! {
+        r: i64
+    };
+    println!("{}", r * r);
 }
