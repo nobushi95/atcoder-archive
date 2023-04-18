@@ -1,7 +1,12 @@
 use itertools::Itertools;
 use proconio::{input, marker::*};
-use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        a: i64,
+        s: String,
+    };
+
+    let ans = if a < 3200 { "red" } else { &s };
+    println!("{}", ans);
 }
