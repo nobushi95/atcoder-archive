@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        r: i64,
+    };
+    let ans = 3 * r * r;
+    println!("{}", ans);
 }
