@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64,
+        y: i64,
+    };
+    let ans = x + y / 2;
+    println!("{}", ans);
 }
