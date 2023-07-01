@@ -3,5 +3,13 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        r: i64,
+    };
+    let ans = match r {
+        0..=1199 => "ABC",
+        1200..=2799 => "ARC",
+        _ => "AGC",
+    };
+    println!("{}", ans);
 }
