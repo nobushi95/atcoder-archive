@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: i64,
+    };
+    let ans = if n % 2 == 0 { n } else { n * 2 };
+    println!("{}", ans);
 }
