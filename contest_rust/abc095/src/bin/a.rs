@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+    };
+    let ans = 700 + s.iter().filter(|&&x| x == 'o').count() * 100;
+    println!("{}", ans);
 }
