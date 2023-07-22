@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        c: [Chars; 3],
+    };
+    let ans = format!("{}{}{}", c[0][0], c[1][1], c[2][2]);
+    println!("{}", ans);
 }
