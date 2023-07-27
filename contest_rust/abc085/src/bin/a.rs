@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        mut s: Chars
+    };
+    s[3] = '8';
+    println!("{}", s.iter().join(""));
 }
