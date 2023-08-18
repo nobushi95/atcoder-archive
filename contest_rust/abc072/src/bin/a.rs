@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64,
+        t: i64,
+    };
+    let ans = (x - t).max(0);
+    println!("{}", ans);
 }
