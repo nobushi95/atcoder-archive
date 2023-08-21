@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: i64,
+    };
+    let ans = if n / 100 == n % 10 { "Yes" } else { "No" };
+    println!("{}", ans);
 }
