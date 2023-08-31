@@ -3,5 +3,11 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        r: i64,
+        g: i64,
+        b: i64,
+    };
+    let ans = if (r * 100 + g * 10 + b) % 4 == 0 {"YES"} else {"NO"};
+    println!("{}", ans);
 }
