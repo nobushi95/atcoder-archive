@@ -3,5 +3,14 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        a: char,
+        b: char,
+    };
+    let ans = if (a == 'H' && b == 'H') || (a == 'D' && b == 'D') {
+        "H"
+    } else {
+        "D"
+    };
+    println!("{}", ans);
 }
