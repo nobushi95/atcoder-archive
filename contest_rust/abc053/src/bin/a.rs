@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64,
+    };
+    let ans = if x < 1200 { "ABC" } else { "ARC" };
+    println!("{}", ans);
 }
