@@ -3,5 +3,12 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        c: char
+    }
+    let ans = match c {
+        'a' | 'i' | 'u' | 'e' | 'o' => "vowel",
+        _ => "consonant",
+    };
+    println!("{}", ans);
 }
