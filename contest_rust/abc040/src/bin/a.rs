@@ -1,7 +1,11 @@
-use itertools::Itertools;
-use proconio::{input, marker::*};
+use proconio::input;
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: i64,
+        x: i64,
+    };
+    let ans = (n - x).min(x - 1);
+    println!("{}", ans);
 }
