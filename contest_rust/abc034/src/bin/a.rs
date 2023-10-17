@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64,
+        y: i64,
+    };
+    let ans = if y > x { "Better" } else { "Worse" };
+    println!("{}", ans);
 }
