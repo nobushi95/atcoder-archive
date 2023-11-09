@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+        n: usize,
+    };
+    let ans = format!("{}{}", s[(n - 1) / 5], s[(n - 1) % 5]);
+    println!("{ans}");
 }
