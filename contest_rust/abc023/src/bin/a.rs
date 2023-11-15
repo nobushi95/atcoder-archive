@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64,
+    };
+    let ans = x / 10 + x % 10;
+    println!("{ans}");
 }
