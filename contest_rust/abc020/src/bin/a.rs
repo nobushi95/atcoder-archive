@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        q: i64,
+    };
+    let ans = if q == 1 { "ABC" } else { "chokudai" };
+    println!("{ans}");
 }
