@@ -3,5 +3,11 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: i64,
+    };
+    println!("{n}");
+    for _ in 0..n {
+        println!("1");
+    }
 }
