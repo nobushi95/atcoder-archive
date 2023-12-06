@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: char
+    };
+    let ans = x as u8 - b'A' + 1;
+    println!("{ans}");
 }
