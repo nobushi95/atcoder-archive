@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        mut a: [i64; n],
+    };
+    let ans = a.iter().sorted().rev().dedup().nth(1).unwrap();
+    println!("{ans}");
 }
