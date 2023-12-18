@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: usize,
+        t: usize,
+    };
+    let ans = t - s + 1;
+    println!("{ans}");
 }
