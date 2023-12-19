@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        a: String,
+    };
+    let ans = if a == "a" { "-1" } else { "a" };
+    println!("{ans}");
 }
