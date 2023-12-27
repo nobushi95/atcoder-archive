@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        c: [[char; 4]; 4],
+    };
+    for i in (0..4).rev() {
+        println!("{}", c[i].iter().rev().join(" "));
+    }
 }
