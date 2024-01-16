@@ -3,5 +3,7 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! { l: usize, r: usize };
+    let ans = &"atcoder"[l - 1..r];
+    println!("{ans}");
 }
