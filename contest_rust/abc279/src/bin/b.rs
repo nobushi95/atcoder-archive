@@ -7,6 +7,7 @@ fn main() {
         s: String,
         t: String,
     };
+
     let ans = if s.contains(&t) { "Yes" } else { "No" };
     println!("{ans}");
 }
