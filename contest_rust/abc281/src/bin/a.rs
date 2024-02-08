@@ -3,5 +3,8 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! { n: usize };
+    for i in (0..=n).rev() {
+        println!("{i}");
+    }
 }
