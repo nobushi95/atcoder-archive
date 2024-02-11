@@ -3,5 +3,24 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        mut s: Chars,
+    };
+    let mut inside = false;
+    for i in 0..n {
+        match s[i] {
+            '"' => {
+                inside = !inside;
+            }
+            ',' => {
+                if !inside {
+                    s[i] = '.';
+                }
+            }
+            _ => {}
+        };
+    }
+    let ans = s.iter().join("");
+    println!("{ans}");
 }
