@@ -3,5 +3,7 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! { k: u8 };
+    let ans = (0..k).map(|x| (b'A' + x) as char).join("");
+    println!("{ans}");
 }
