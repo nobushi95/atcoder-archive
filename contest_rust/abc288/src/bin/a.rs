@@ -3,5 +3,12 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        ab: [(i64, i64); n],
+    };
+    let ans = ab.iter().map(|(a, b)| a + b);
+    for a in ans {
+        println!("{a}");
+    }
 }
