@@ -3,5 +3,9 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+    };
+    let ans = s.iter().map(|x| x.to_uppercase()).join("");
+    println!("{ans}");
 }
