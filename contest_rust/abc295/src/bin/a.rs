@@ -7,14 +7,8 @@ fn main() {
         n: usize,
         w: [String; n],
     };
-    let tbl = vec![
-        "and".to_string(),
-        "not".to_string(),
-        "that".to_string(),
-        "the".to_string(),
-        "you".to_string(),
-    ];
-    let ans = if w.iter().any(|x| tbl.contains(x)) {
+    let tbl = vec!["and", "not", "that", "the", "you"];
+    let ans = if w.iter().any(|x| tbl.contains(&x.as_str())) {
         "Yes"
     } else {
         "No"
