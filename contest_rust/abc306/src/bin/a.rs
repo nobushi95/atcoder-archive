@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        s: Chars,
+    };
+    let ans = s.iter().map(|x| format!("{x}{x}")).join("");
+    println!("{ans}");
 }
