@@ -3,5 +3,10 @@ use proconio::{input, marker::*};
 use std::cmp::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [[usize; 7]; n],
+    };
+    let ans = a.iter().map(|x| x.iter().sum::<usize>()).join(" ");
+    println!("{ans}");
 }
