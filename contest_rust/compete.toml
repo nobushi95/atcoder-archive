@@ -24,7 +24,11 @@ test-suite = "{{ manifest_dir }}/testcases/{{ bin_alias }}.yml"
 src = '''
 use itertools::Itertools;
 use proconio::{input, marker::*};
-use std::cmp::*;
+use std::{
+    cmp::*,
+    collections::{HashMap, HashSet},
+};
+use superslice::*;
 
 fn main() {
     todo!();
