@@ -7,5 +7,17 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        m: usize,
+        d: [i64; m],
+    };
+    let mut mid = (d.iter().sum::<i64>() + 1) / 2;
+    for i in 0..m {
+        if mid <= d[i] {
+            println!("{} {}", i + 1, mid);
+            return;
+        } else {
+            mid -= d[i];
+        }
+    }
 }
