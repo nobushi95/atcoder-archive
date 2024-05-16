@@ -7,5 +7,10 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+    };
+    let aiueo = "aiueo".chars().collect_vec();
+    let ans = s.iter().filter(|x| !aiueo.contains(x)).join("");
+    println!("{ans}");
 }
