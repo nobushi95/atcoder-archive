@@ -7,5 +7,16 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        mut a: [u64; n],
+    };
+    a.sort();
+    let ans = a
+        .windows(2)
+        .filter(|x| x[0] + 1 != x[1])
+        .map(|x| x[0] + 1)
+        .next()
+        .unwrap();
+    println!("{ans}");
 }
