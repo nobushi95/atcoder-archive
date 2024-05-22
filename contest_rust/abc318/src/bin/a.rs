@@ -7,5 +7,14 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: u64, m: u64, p: u64,
+    };
+    let mut ans = 0;
+    let mut i = m;
+    while i <= n {
+        ans += 1;
+        i += p;
+    }
+    println!("{ans}");
 }
