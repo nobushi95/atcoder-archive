@@ -7,5 +7,17 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: String,
+    };
+    let mut ans = 1;
+    for i in 0..s.len() - 1 {
+        for j in i + 1..s.len() {
+            let sub = String::from(&s[i..=j]);
+            if sub == sub.chars().rev().join("") {
+                ans = ans.max(sub.len());
+            }
+        }
+    }
+    println!("{ans}");
 }
