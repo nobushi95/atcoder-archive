@@ -7,5 +7,13 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: Chars
+    };
+    let ans = if n.windows(2).all(|x| x[0] > x[1]) {
+        "Yes"
+    } else {
+        "No"
+    };
+    println!("{ans}");
 }
