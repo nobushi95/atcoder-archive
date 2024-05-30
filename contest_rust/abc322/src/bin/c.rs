@@ -7,5 +7,12 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize, m: usize,
+        a: [usize; m],
+    };
+    for i in 1..=n {
+        let idx = a.lower_bound(&i);
+        println!("{}", a[idx] - i);
+    }
 }
