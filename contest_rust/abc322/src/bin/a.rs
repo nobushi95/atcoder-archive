@@ -7,5 +7,13 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        s: Chars,
+    };
+    let ans = match s.windows(3).position(|x| x.iter().join("") == "ABC") {
+        Some(x) => x as i64 + 1,
+        None => -1,
+    };
+    println!("{ans}");
 }
