@@ -7,5 +7,22 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        s: [Chars; n],
+    };
+
+    let ans = s
+        .iter()
+        .enumerate()
+        .sorted_by(|(_, l), (_, r)| {
+            r.iter()
+                .filter(|&x| *x == 'o')
+                .count()
+                .cmp(&l.iter().filter(|&x| *x == 'o').count())
+        })
+        .map(|(i, _)| i + 1)
+        .join(" ");
+
+    println!("{ans}");
 }
