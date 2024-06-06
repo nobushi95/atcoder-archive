@@ -7,5 +7,14 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [u64; n],
+    };
+    let ans = if a.iter().all(|x| x == a.first().unwrap()) {
+        "Yes"
+    } else {
+        "No"
+    };
+    println!("{ans}");
 }
