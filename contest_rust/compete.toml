@@ -26,7 +26,7 @@ use itertools::Itertools;
 use proconio::{input, marker::*};
 use std::{
     cmp::*,
-    collections::{HashMap, HashSet},
+    collections::{HashMap, HashSet, VecDeque},
 };
 use superslice::*;
 
@@ -135,7 +135,7 @@ path = "./{{ contest }}"
 
 [test]
 # Toolchain for the test. (optional)
-# toolchain = "1.42.0"
+toolchain = "1.42.0"
 # Profile for `cargo build`. ("dev" | "release")
 #
 # Defaults to `"dev"`.
