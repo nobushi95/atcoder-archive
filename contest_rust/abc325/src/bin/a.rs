@@ -7,5 +7,8 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: String, t: String
+    };
+    println!("{s} san");
 }
