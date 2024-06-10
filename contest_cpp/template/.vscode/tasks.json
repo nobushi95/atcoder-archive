@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "g++-12 Mac Build",
-            "command": "/opt/homebrew/bin/g++-12",
+            "label": "g++-14 Mac Build",
+            "command": "/opt/homebrew/bin/g++-14",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

@@ -14,13 +14,13 @@
             "preLaunchTask": "g++ Windows Build"
         },
         {
-            "name": "g++-12 Mac",
+            "name": "g++-14 Mac",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${fileDirname}",
-            "preLaunchTask": "g++-12 Mac Build"
+            "preLaunchTask": "g++-14 Mac Build"
         }
     ]
 }
