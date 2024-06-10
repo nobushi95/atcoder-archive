@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/opt/homebrew/bin/g++-14",
+            "cStandard": "gnu17",
+            "intelliSenseMode": "macos-gcc-arm64",
+            "compilerArgs": [
+                "-Wall"
+            ],
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "C:\\Users\\shinn\\scoop\\apps\\gcc\\current\\bin\\g++.EXE",
+            "cStandard": "gnu17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-Wall"
+            ],
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
