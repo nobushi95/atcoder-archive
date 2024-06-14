@@ -7,5 +7,10 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        x: i64, y: i64,
+    };
+    let d = y - x;
+    let ans = if d <= 2 && d >= -3 { "Yes" } else { "No" };
+    println!("{ans}");
 }
