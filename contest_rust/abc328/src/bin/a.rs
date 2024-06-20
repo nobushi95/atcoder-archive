@@ -7,5 +7,10 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize, x: u64,
+        s: [u64; n],
+    };
+    let ans = s.iter().filter(|&si| *si <= x).sum::<u64>();
+    println!("{ans}");
 }
