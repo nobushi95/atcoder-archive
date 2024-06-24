@@ -7,5 +7,12 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        mut a: [i32; n],
+    };
+    a.sort();
+    a.dedup();
+    let ans = a[a.len() - 2];
+    println!("{ans}");
 }
