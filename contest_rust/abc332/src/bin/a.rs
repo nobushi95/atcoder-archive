@@ -7,5 +7,13 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize, s: i64, k: i64,
+        pq: [(i64, i64); n],
+    };
+    let mut ans = pq.iter().map(|(p, q)| p * q).sum::<i64>();
+    if ans < s {
+        ans += k;
+    }
+    println!("{ans}");
 }
