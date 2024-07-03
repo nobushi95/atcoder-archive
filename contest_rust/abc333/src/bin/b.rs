@@ -7,5 +7,15 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        s: String,
+        t: String,
+    };
+    let p = String::from("ABCDEAEDCBA");
+    let ans = if p.contains(&s) == p.contains(&t) {
+        "Yes"
+    } else {
+        "No"
+    };
+    println!("{ans}");
 }
