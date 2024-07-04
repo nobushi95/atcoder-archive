@@ -7,5 +7,8 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { n: u64 };
+    let v = vec![n; n as usize];
+    let ans = v.iter().join("");
+    println!("{ans}");
 }
