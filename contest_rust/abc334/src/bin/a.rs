@@ -7,5 +7,7 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { b: u64, g: u64 };
+    let ans = if b > g { "Bat" } else { "Glove" };
+    println!("{ans}");
 }
