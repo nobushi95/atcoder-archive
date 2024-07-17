@@ -7,5 +7,9 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { mut s: Chars };
+    s.pop();
+    s.push('4');
+    let ans = s.iter().join("");
+    println!("{ans}");
 }
