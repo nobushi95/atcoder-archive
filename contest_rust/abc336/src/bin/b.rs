@@ -7,5 +7,10 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { n: i64 };
+    let ans = match format!("{:b}", n).chars().rev().position(|x| x == '1') {
+        Some(x) => x,
+        None => 0,
+    };
+    println!("{ans}");
 }
