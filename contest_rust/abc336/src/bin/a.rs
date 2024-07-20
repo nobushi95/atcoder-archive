@@ -7,5 +7,6 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { n: usize };
+    println!("L{}ng", (0..n).map(|_| 'o').join(""));
 }
