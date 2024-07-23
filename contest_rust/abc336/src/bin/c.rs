@@ -7,5 +7,22 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { mut n: i64 };
+
+    n -= 1;
+
+    let mut ans = vec![];
+
+    while n > 0 {
+        ans.push(n % 5 * 2);
+        n /= 5;
+    }
+
+    if ans.is_empty() {
+        ans.push(0);
+    }
+
+    let ans = ans.iter().rev().join("");
+
+    println!("{ans}");
 }
