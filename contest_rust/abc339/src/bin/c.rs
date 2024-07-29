@@ -7,5 +7,13 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [i64; n],
+    };
+    let mut ans = 0;
+    for ai in a {
+        ans = 0.max(ans + ai);
+    }
+    println!("{ans}");
 }
