@@ -7,5 +7,7 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { s: String };
+    let ans = s.split('.').last().unwrap();
+    println!("{ans}");
 }
