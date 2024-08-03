@@ -7,5 +7,9 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        a: i64, b: i64, d: usize
+    };
+    let ans = (a..=b).step_by(d).join(" ");
+    println!("{ans}");
 }
