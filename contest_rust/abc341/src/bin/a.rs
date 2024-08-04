@@ -7,5 +7,11 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+    };
+    let ans = (0..2 * n + 1)
+        .map(|x| if x % 2 == 0 { 1 } else { 0 })
+        .join("");
+    println!("{ans}");
 }
