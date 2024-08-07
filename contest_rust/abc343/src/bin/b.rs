@@ -7,5 +7,19 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [[i64; n]; n],
+    };
+    let ans = a
+        .iter()
+        .map(|x| {
+            x.iter()
+                .enumerate()
+                .filter(|&(_, x)| *x == 1)
+                .map(|(i, _)| i + 1)
+                .join(" ")
+        })
+        .join("\n");
+    println!("{ans}");
 }
