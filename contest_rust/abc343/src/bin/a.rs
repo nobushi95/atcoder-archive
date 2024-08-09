@@ -7,5 +7,11 @@ use std::{
 use superslice::*;
 
 fn main() {
-    todo!();
+    input! { a: i64, b: i64 }
+    for ans in 0..=9 {
+        if ans != a + b {
+            println!("{ans}");
+            return;
+        }
+    }
 }
